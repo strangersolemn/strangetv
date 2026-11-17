@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>STRANGE TV</title>
+<meta name="description" content="dynamic music videos and art films by solemn, living on bitcoin.">
+<meta property="og:title" content="STRANGE TV"><meta property="og:description" content="dynamic music videos and art films by solemn, living on bitcoin.">
+<meta property="og:image" content="https://strangetv.strangersolemn.art/og.png"><meta name="twitter:card" content="summary_large_image"><meta name="twitter:site" content="@strangersolemn">
+<link rel="icon" href="og.png">
+<style>
+@font-face { font-family: Ant; src: url(anton.woff2) format("woff2"); }
+:root { --ink: #0b0000; --red: #e3161f; --paper: #f3ede6; --dim: #8d7f78; --card: #1a0607; --pad: clamp(16px, 4vw, 56px); }
+* { box-sizing: border-box; }
+html, body { margin: 0; background: var(--ink); color: var(--paper); font: 16px/1.55 "Courier New", monospace; }
+a { color: var(--paper); }
+.ant { font-family: Ant, Impact, "Arial Narrow", sans-serif; text-transform: uppercase; font-weight: 400; letter-spacing: .01em; }
+header { display: flex; align-items: center; justify-content: space-between; padding: 18px var(--pad); }
+.logo { display: flex; align-items: center; gap: .12em; color: var(--red); font-size: clamp(28px, 4vw, 44px); line-height: 1; }
+.logo b { font-weight: 400; background: var(--red); color: var(--ink); padding: .06em .22em .02em; border-radius: .16em; transform: rotate(-3deg); display: inline-block; }
+.bug { font-size: 12px; letter-spacing: .2em; color: var(--dim); display: flex; align-items: center; gap: 8px; }
+.bug i { width: 9px; height: 9px; border-radius: 50%; background: var(--red); animation: blink 1.6s infinite; }
+@keyframes blink { 50% { opacity: .2; } }
+main { max-width: 1180px; margin: 0 auto; padding: 0 var(--pad) 64px; }
+.eyebrow { color: var(--red); letter-spacing: .18em; font-size: 13px; margin: 28px 0 6px; }
+h1 { font-size: clamp(48px, 9vw, 120px); line-height: .92; margin: 0 0 14px; }
+h1 em { font-style: normal; color: var(--red); }
+.lede { max-width: 640px; font-size: 17px; margin: 0 0 26px; }
+video { width: 100%; display: block; border-radius: 10px; border: 2px solid #3a1416; background: #000; aspect-ratio: 16/9; }
+.btns { display: flex; flex-wrap: wrap; gap: 12px; margin: 22px 0 8px; }
+.btn { display: inline-block; text-decoration: none; padding: 12px 20px 9px; border-radius: 8px; font-size: 22px; background: var(--red); color: var(--ink); }
+.btn.ghost { background: none; color: var(--paper); border: 2px solid var(--red); }
+.note { color: var(--dim); font-size: 13px; }
+h2 { font-size: 34px; margin: 56px 0 16px; }
+.rail { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 14px; }
+.ep { background: var(--card); border: 1px solid #3a1416; border-radius: 10px; overflow: hidden; }
+.ep .pic { aspect-ratio: 16/9; background: #000 center/cover; display: flex; align-items: center; justify-content: center; color: var(--dim); font-size: 28px; }
+.ep .t { padding: 10px 12px 12px; }
+.ep .t b { display: block; font-size: 20px; }
+.ep .t span { color: var(--dim); font-size: 12px; letter-spacing: .1em; }
+.static { background: repeating-linear-gradient(0deg, #150405 0 2px, #0b0000 2px 4px); }
+dl { display: grid; grid-template-columns: max-content 1fr; gap: 6px 18px; font-size: 13px; word-break: break-all; }
+dt { color: var(--dim); }
+footer { padding: 28px var(--pad); color: var(--dim); font-size: 12px; letter-spacing: .14em; text-align: center; }
+@media (max-width: 560px) { dl { grid-template-columns: 1fr; } dt { margin-top: 8px; } }
+</style></head><body>
+<header><div class="logo ant">STRANGE<b>TV</b></div><div class="bug"><i></i>LIVE ON BITCOIN</div></header>
+<main>
+  <div class="eyebrow">A STRANGE TV ORIGINAL · EPISODE 1</div>
+  <h1 class="ant">HIDING IN <em>THE THREAD</em></h1>
+  <p class="lede">the world's first dynamic troll video. every time it plays on bitcoin it builds itself out of what the trolls are saying right now. this is a recording; the real one lives on chain and changes.</p>
+  <video src="ep1.mp4" poster="ep1.jpg" controls playsinline preload="metadata"></video>
+  <div class="btns">
+    <a class="btn ant" href="https://ordinals.com/content/9edff19f8aae68ce0a476f122576299d98c28651810fe42f59d74ce27c600d07i0" target="_blank" rel="noopener">▶ watch it live on bitcoin</a>
+    <a class="btn ghost ant" href="https://ordinals.com/inscription/4be26f398aef85498606aedbeab86f9a5fad50d1bdfbeed55b53bbcfdb3fda3ei0" target="_blank" rel="noopener">the collection</a>
+  </div>
+  <p class="note">best on desktop. phones get a lite version.</p>
+
+  <h2 class="ant">Episodes</h2>
+  <div class="rail">
+    <div class="ep"><div class="pic" style="background-image:url(ep1.jpg)"></div><div class="t"><b class="ant">Hiding in the Thread</b><span>EPISODE 1 · 2:14 · 300 EDITIONS</span></div></div>
+    <div class="ep"><div class="pic static ant">COMING SOON</div><div class="t"><b class="ant">Episode 2</b><span>COMING SOON</span></div></div>
+    <div class="ep"><div class="pic static ant">COMING SOON</div><div class="t"><b class="ant">Episode 3</b><span>COMING SOON</span></div></div>
+  </div>
+
+  <h2 class="ant">On chain</h2>
+  <dl>
+    <dt>parent</dt><dd>4be26f398aef85498606aedbeab86f9a5fad50d1bdfbeed55b53bbcfdb3fda3ei0</dd>
+    <dt>episode 1</dt><dd>300 children, each plays 9edff19f8aae68ce0a476f122576299d98c28651810fe42f59d74ce27c600d07i0</dd>
+    <dt>by</dt><dd><a href="https://x.com/strangersolemn" target="_blank" rel="noopener">solemn · @strangersolemn</a></dd>
+  </dl>
+</main>
+<footer>STRANGE TV · A SOLEMN PRODUCTION · EVERY EPISODE LIVES ON BITCOIN</footer>
+</body></html>
